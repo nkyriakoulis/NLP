@@ -1,4 +1,4 @@
-# Naive Autocorrect Project in Python
+# Sentiment Analysis
 
 ### About
 
