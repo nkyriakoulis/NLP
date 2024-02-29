@@ -1,4 +1,5 @@
 /Autocorrect/books/*
 /Sentiment Analysis/aclImdb/*
 /Part of Speech Tagging/treebank/*
+/Autocomplete/en_US.twitter.txt
 .idea
