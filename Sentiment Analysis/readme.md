@@ -31,6 +31,20 @@ from naive to more sophisticated ones.
   entities and other meaningless for our purpose words (e.g. URLs).
 
 
+- #### Approach #2: Sentiment Analysis using CBoW (Continuous Bag of Words)
+  This is a different approach using the CBoW method (see Helpers directory for 
+  documentation). After getting the embeddings from the training set, they can 
+  be used for training another model for classifying the movie reviews. For that,
+  we average the embedding representation  of all words consisting each review 
+  and feeding the result to a Neural Network that learns to classify the reviews 
+  as positive or negative. We repeat the process for the test dataset, making sure
+  to check if each word has an embedding representation, i.e. it was present
+  in the training set. Please note that the hyperparameters of both neural networks
+  are not finetuned, as the goal of this implementation was to get familiar with 
+  the CBoW model, rather than training a highly accurate model.
+  
+
+
 ### Reference: NLTK Library
 
 Here I use NLTK (Natural Language Toolkit) for
